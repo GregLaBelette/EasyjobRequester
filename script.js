@@ -153,7 +153,7 @@ function ejGet(url) {
         reject(this.statusText);
       }
     }
-    getReq.open('GET', `http://easyjob.nov.group:8008/api.json/${url}`);
+    getReq.open('GET', `https://easyjob.nov.group:8008/api.json/${url}`);
     getReq.setRequestHeader('Authorization', 'Bearer ' + token.access_token);
     getReq.send();
   })
@@ -176,7 +176,7 @@ function ejPost(url, content) {
       displayMessage('Something went wrong with POST request');
     }
   }
-  postReq.open('POST', `http://easyjob.nov.group:8008/api.json/${url}`);
+  postReq.open('POST', `https://easyjob.nov.group:8008/api.json/${url}`);
   postReq.setRequestHeader('Authorization', 'Bearer ' + token.access_token);
   postReq.send(`${content}`);
 }
