@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>EazyJob Requester</title>
+  <meta name="description" content="A test for eJ WebApp">
+  <meta name="author" content="Grégoire Vallette">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+  <div id="main">
+
+    <div id="title">
+      <div id="icon" class="HorizSpaced"></div>
+      <div id="titleText" class="horizSpaced">
+        <p>Easyjob WebApp requests tester</p>
+      </div>
+    </div>
+
+    <div id="menu" class="mainFields">
+      <div class="subFields horizSpaced">Authentification</div>
+      <div class="subFields horizSpaced">Get Request</div>
+      <div class="subFields horizSpaced">Post Request</div>
+      <div class="subFields horizSpaced">People Fetcher</div>
+      <div class="subFields horizSpaced">Items Explorer</div>
+      <div class="subFields horizSpaced">Trello Creator</div>
+    </div>
+
+    <div id="authentDiv" class="mainFields showHide">
+      <div id="credentials">
+        <input type="text" id="username" class="vertSpaced" placeholder="Username">
+        <input type="password" id="password" class="vertSpaced" placeholder="Password">
+        <button id="authentGo" class="vertSpaced" >Go</button>
+      </div>
+      <div id="log">
+        <div id="loggedAs" class="subFields vertSpaced">Logged As...</div>
+        <button id="authentLogout">Logout</button>
+      </div>
+    </div>
+
+    <div id="getDiv" class="mainFields showHide">
+      <input id=get type="text" placeholder="url">
+      <button id=getButton>Get</button>
+    </div>
+
+    <div id="postDiv"  class="mainFields showHide">
+      <input id=postUrl class="vertSpaced" type="text" placeholder="url">
+      <input id=postContent class="vertSpaced" type="text" placeholder="content">
+      <button id=postButton>Post</button>
+    </div>
+
+    <div id="peopleDiv" class="mainFields showHide">
+      <div id="peopleJobSearch" class="vertSpaced">
+        <input id="peopleJobNumber" type="text" placeholder="Job number">
+        <button id="peopleGoButton" >Go</button>
+      </div>
+      <div id="peopleSearchResults" class="subFields vertSpaced">    
+        People information displayed here...
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div id="sortButtonDiv">
+        <button id="sortButton">Sort by name</button>
+      </div>
+
+    </div>
+
+    <div id="itemsDiv" class="mainFields showHide">
+      Items Explorer (coming soon)
+    </div>
+
+    <div id="trelloDiv" class="mainFields showHide">
+      Trello Creator (coming soon)
+    </div>
+
+    <div id="responseMessage" class="mainFields">
+      Response message
+    </div>
+    <div id="JSONresponse"  class="mainFields">
+      JSON response
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
