@@ -100,7 +100,7 @@ function authent(username, password) {
       displayMessage('Something went wrong with auth...');
     }
   }
-  authentReq.open('POST', 'http://easyjob.nov.group:8008/token');
+  authentReq.open('POST', 'https://easyjob.nov.group:8008/token');
   authentReq.send(`grant_type=password&username=${username}&password=${password}`)
 }
 
